@@ -1,0 +1,289 @@
+/* --------- ОБНУЛЕННЯ СТИЛІВ ТЕГІВ ------------ */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: none;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a {
+	color: inherit;
+}
+a:link,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+img{
+	vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+input,
+button,
+textarea {
+	font-family: inherit;
+	font-size: inherit;
+}
+button {
+	cursor: pointer;
+	color: inherit;
+	background-color: inherit;
+}
+body {
+	line-height: 1;
+}
+/* ------------------------------------------------ */
+/*-------------- Підключення шрифтів--------------- */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+@font-face {
+	font-family: "Lato";
+	src: url("../fonts/lato/Lato-Regular.woff2") format("woff2"), url("../fonts/lato/Lato-Regular.woff") format("woff");
+	font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Lato";
+	src: url("../fonts/lato/Lato-Bold.woff2") format("woff2"), url("../fonts/lato/Lato-Bold.woff") format("woff");
+	font-display: swap;
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Lato";
+	src: url("../fonts/lato/Lato-Black.woff2") format("woff2"), url("../fonts/lato/Lato-Black.woff") format("woff");
+	font-display: swap;
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Larsseit";
+	src: url("../fonts/Larsseit/Larsseit-Regular.woff2") format("woff2"), url("../fonts/lato/Lato-Regular.woff") format("woff");
+	font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Larsseit";
+	src: url("../fonts/Larsseit/Larsseit-Medium.woff2") format("woff2"), url("../fonts/lato/Lato-Regular.woff") format("woff");
+	font-display: swap;
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Larsseit";
+	src: url("../fonts/Larsseit/Larsseit-Bold.woff2") format("woff2"), url("../fonts/Larsseit/Larsseit-Bold.woff") format("woff");
+	font-display: swap;
+	font-weight: 700;
+	font-style: normal;
+}
+/* ------------------------------------------------ */
+.header,
+.footer{
+    font-family: 'Larsseit';
+    font-weight: 400;
+    color:red;
+}
+.title {
+    font-family: 'Lato';
+    font-weight: 900;
+    color: blue;
+}
+/* ------------------content-item------------------ */
+
+.content-item {
+}
+.content-title {
+	font-family: 'Larsseit';
+	font-weight: 900;
+}
+.content-item .text-resurs{
+	color:darkgreen;
+}
+.content-item p{
+	color: brown;
+}
+.resurs-list {
+}
+.resurs-item span{
+	color:black;
+	font-weight: 700;
+	font-family: 'Lato';
+}
+.resurs-item p{
+	color:darkmagenta;
+}
+/* --------------------------------------------- */
+/* -------------content-info one-info----------- */
+.content-info {
+}
+.content-info-wrapper {
+}
+.content-info-wrapper p{
+	color: yellowgreen;
+}
+.one-info span{
+	color:red;
+}
+.content-info-link {
+	color:black;
+}
+.one-info  .content-info-text {
+	color: rgb(19, 28, 215);
+}
+/* --------------------------------------------- */
+/* -------------content-info two-info------------*/
+.two-info span{
+	color:darkmagenta;
+}
+.two-info a{
+	color:darkorange;
+}
+.two-info .content-info-text {
+	color:rgb(192, 24, 167);
+}
+/* --------------------------------------------- */
+/* -------------content-info three-info------------*/
+.three-info {
+}
+.three-info span{
+	color:#020202;
+}
+.three-info .content-info-link {
+	color:darksalmon;
+}
+.three-info .content-info-text {
+	color:darkmagenta;
+}
+.three-info p{
+	color:cadetblue;
+}
+/* --------------------------------------------- */
+/* -------------content-info four-info-----------*/
+.four-info  {
+}
+.four-info span {
+	color:indigo;
+}
+.four-info  a{
+	color:blue
+}
+.four-info  p{
+	color:#020202;
+}
+.four-info .content-info-text {
+	color:crimson;
+}
+/* --------------------------------------------- */
+/* -------------content-info five-info-----------*/
+.five-info p{
+	color:lightpink;
+}
+.five-info span {
+	color:darkkhaki;
+}
+.five-info  .content-info-link {
+	color:darkviolet
+}
+.five-info .content-info-text {
+	color:darkslategray;
+}
+/* --------------------------------------------- */
+/* -------------content-info six-info------------*/
+.six-info {
+}
+.six-info p{
+	color:lightgreen;
+}
+.six-info span{
+	color:hotpink;
+}
+.six-info a{
+	color:gold;
+}
+.six-info .content-info-text {
+	color:dimgrey;
+}
+/* --------------------------------------------- */
+/* ------------------navigation------------------*/
+.navigation-title {
+	color:fuchsia;
+	font-family: 'Larsseit';
+	font-weight: 500;
+}
+.navigation-one {
+	color:blue;
+}
+.navigation-two {
+	color:red;
+}
+.navigation-three {
+	color:cadetblue;
+}
+.navigation-four {
+	color:darkviolet;
+}
+.navigation-five {
+	color:deeppink
+}
+.navigation-six {
+	color:darkgreen;
+}
+/* --------------------------------------------- */
+/* --------------------fonts---------------------*/
+.fonts li{
+    color: rgb(138, 67, 81);
+}
+.roboto-regular {
+    font-family: 'Roboto';
+    font-weight: 400;
+}
+.roboto-bold {
+    font-family: 'Roboto';
+    font-weight: 700;
+}
+.roboto-black {
+    font-family: 'Roboto';
+    font-weight: 900;
+}
+.lato-regular {
+    font-family: 'Lato';
+    font-weight: 400;
+}
+.lato-bold {
+    font-family: 'Lato';
+    font-weight: 700;
+}
+.lato-black {
+    font-family: 'Lato';
+    font-weight: 900;
+}
+.larsseit-regular {
+    font-family: 'Larsseit';
+    font-weight: 400;
+}
+.larsseit-medium {
+    font-family: 'Larsseit';
+    font-weight: 500;
+}
+.larsseit-bold {
+    font-family: 'Larsseit';
+    font-weight: 700;
+}
+/* --------------------------------------------- */
