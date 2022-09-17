@@ -1,0 +1,336 @@
+/* --------- ОБНУЛЕННЯ СТИЛІВ ТЕГІВ ------------ */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: none;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a {
+	color: inherit;
+}
+a:link,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+img{
+	vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+input,
+button,
+textarea {
+	font-family: inherit;
+	font-size: inherit;
+}
+button {
+	cursor: pointer;
+	color: inherit;
+	background-color: inherit;
+}
+/* ------------------------------------------------ */
+/*-------------- Підключення шрифтів--------------- */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,500&display=swap');
+
+@font-face {
+	font-family: 'Oswald';
+	src: url("../fonts/oswald/Oswald-Regular.woff2") format("woff2"), url("../fonts/oswald/Oswald-Regular.woff") format("woff");
+	font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Oswald';
+	src: url("../fonts/oswald/Oswald-RegularItalic.woff2") format("woff2"), url("../fonts/oswald/Oswald-RegularItalic.woff") format("woff");
+	font-display: swap;
+	font-weight: 400;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'Oswald';
+	src: url("../fonts/oswald/Oswald-Medium.woff2") format("woff2"), url("../fonts/oswald/Oswald-Medium.woff") format("woff");
+	font-display: swap;
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Oswald';
+	src: url("../fonts/oswald/Oswald-Bold.woff2") format("woff2"), url("../fonts/oswald/Oswald-Bold.woff") format("woff");
+	font-display: swap;
+	font-weight: 700;
+	font-style: normal;
+}
+/* ------------------------------------------------ */
+/*----------------- Загальні стилі----------------- */
+body {
+	line-height: 1;
+	font-family: 'Oswald', 'Roboto', 'Open Sans', sans-serif;
+	font-size: 17px;
+	letter-spacing: 0.32px;
+}
+/*--------------------------------------------------*/
+/*--------------------------------------------------*/
+.header,
+.footer {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+	font-weight: 500;
+	font-style: italic;
+	color:#015087;
+	text-transform: uppercase;
+	background-color:rgba(148, 28, 28, 0.475);
+	text-align: center;
+}
+.header{
+	padding-top: 15px;
+}
+.content {
+	margin: 20px 10px;
+}
+/* ------------------------------------------------ */
+/*------------------content-item--------------------*/
+.content-item {
+	margin-bottom: 20px;
+}
+.content-title {
+	text-transform: uppercase;
+	color:#000000;
+	font-weight: 700;
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+.menu-navigation-list {
+	background-color:rgba(21, 183, 175, 0.29);
+	padding: 20px 10px;
+	margin-bottom: 10px;
+}
+.menu-navigation-item{
+	margin-bottom: 10px;
+}
+.menu-navigation-item  a{
+	text-decoration: underline;
+	color: #15b7af;
+}
+.content-text {
+	font-family: 'Montserrat', sans-serif;
+	margin-bottom: 10px;
+	text-align: justify;
+}
+.content-item-images {
+	margin-bottom: 10px;
+}
+.content-item-images img{
+	max-width: 100%;
+}
+.content-item-text p {
+	margin-bottom: 10px;
+}
+.content-item-text .content-item-text__span{
+	color:#7790a9;
+	text-shadow: 1px 2px 1px rgba(196, 13, 163, 0.499);
+	text-decoration: underline;
+}
+.content-item-text span{
+	color:#015087;
+	text-shadow: 1px 2px 1px rgba(196, 13, 163, 0.576);
+}
+/* ------------------------------------------------ */
+/*-------------content-info tony-robbins------------*/
+.content-info {
+	background-color:rgba(67, 154, 241, 0.517);
+	word-spacing: 5px;
+	padding: 10px 15px;
+	margin-bottom: 10px;
+}
+.content-info-title {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+	font-weight: 500;
+	text-align: center;
+	color:rgba(180, 32, 148, 0.985);
+	text-shadow: 1px 2px 1px rgba(29, 10, 35, 0.55);
+	margin-bottom: 5px;
+}
+.content-info-quote {
+	text-align-last: right;
+	margin-bottom: 10px;
+	font-style: italic;
+	color:rgba(54, 13, 16, 0.985);
+	text-shadow: 1px 2px 1px rgba(137, 15, 174, 0.556);
+}
+.content-info-quote span{
+	color:#b21212;
+}
+.content-info-text p{
+	margin-bottom: 10px;
+	line-height:1.5;
+}
+.content-info-text span{
+	color:rgba(3, 40, 78, 0.822);
+	text-shadow: 2px 1px 1px rgba(94, 63, 103, 0.599);
+}
+.content-info-more a{
+	text-decoration: underline;
+}
+.content-info-more span{
+	color:rgba(224, 16, 200, 0.679);
+	font-style: italic;
+}
+.content-info-link{
+	color:rgb(252, 37, 37);
+	text-shadow: 1px 3px 1px rgba(196, 23, 219, 0.573);
+}
+/* ------------------------------------------------ */
+/*-------------content-info stephen-king------------*/
+.stephen-king {
+	background-color:rgba(29, 12, 125, 0.517);
+}
+.stephen-king-title {
+	color:rgba(180, 32, 32, 0.65);
+	text-shadow: 1px 2px 1px rgba(4, 38, 56, 0.861);
+}
+
+.stephen-king-quote {
+	color:rgba(69, 58, 59, 0.985);
+	text-shadow: 1px 2px 1px rgba(137, 15, 174, 0.556);
+}
+.stephen-king-text span{
+	color:rgba(74, 110, 146, 0.752);
+	text-shadow: 2px 1px 1px rgba(5, 1, 6, 0.843);
+}
+.stephen-king-text p{
+	color:rgba(232, 245, 231, 0.939);
+	text-shadow: 1px 4px 2px rgb(8, 8, 8);
+}
+.content-info-text a{
+	text-decoration: underline;
+}
+.live-your,
+.facebook {
+	color:rgba(31, 12, 26, 0.939);
+	text-shadow: 1px 1px 2px rgb(250, 250, 250);
+}
+/* ------------------------------------------------ */
+/*------------content-info thomas-edison -----------*/
+.thomas-edison {
+	background-color:rgba(25, 130, 79, 0.825);
+}
+.thomas-edison-title {
+	color:rgba(47, 32, 180, 0.923);
+	text-shadow: 1px 2px 2px rgba(99, 100, 100, 0.56);
+}
+.thomas-edison-quote {
+	color:rgba(41, 7, 10, 0.985);
+	text-shadow: 1px 2px 1px rgba(52, 15, 174, 0.556);
+}
+.content-info-text {
+}
+.thomas-edison-text {
+	color:rgba(41, 231, 24, 0.855);
+	text-shadow: 1px 3px 2px rgba(0, 0, 0, 0.816);
+}
+.thomas-edison-text span{
+	color:rgba(166, 21, 21, 0.752);
+	text-shadow: 1px 3px 2px rgba(3, 44, 73, 0.843);
+}
+/* ------------------------------------------------ */
+/*------------content-info martin-luther-----------*/
+.martin-luther {
+	background-color:rgba(175, 18, 136, 0.825);
+}
+.martin-luther-title {
+	color:rgba(100, 246, 2, 0.923);
+	text-shadow: 1px 4px 2px rgba(86, 32, 133, 0.56);
+}
+.martin-luther-quote {
+	color:rgba(20, 206, 197, 0.985);
+	text-shadow: 1px 2px 1px rgba(48, 57, 176, 0.493);
+}
+.error{
+	text-decoration: line-through;
+	color:#015087;
+}
+.martin-luther-quote .error{
+	color:#9aba96;
+}
+.martin-luther-text {
+	color:rgba(10, 9, 43, 0.855);
+	text-shadow: 1px 3px 2px rgba(24, 155, 78, 0.816);
+}
+.martin-luther-text span{
+	color:rgba(15, 20, 23, 0.752);
+	text-shadow: 1px 2px 1px rgba(174, 217, 248, 0.843);
+}
+.martin-luther-more span{
+	color:rgba(4, 38, 90, 0.752);
+	text-shadow: 1px 2px 1px rgba(8, 128, 213, 0.843);
+	text-transform: capitalize;
+}
+.martin-luther-more .martin-luther-link {
+	color:rgba(243, 232, 232, 0.826);
+	text-shadow: 1px 2px 1px rgba(1, 1, 1, 0.843);
+}
+/* ------------------------------------------------ */
+/*------------content-info mahatma-gandhi-----------*/
+.mahatma-gandhi {
+	background-color:rgba(11, 43, 227, 0.876);
+}
+
+.mahatma-gandhi-title {
+	color:rgba(246, 55, 2, 0.923);
+	text-shadow: 1px 4px 2px rgba(24, 15, 32, 0.56);
+}
+.mahatma-gandhi-text {
+	color:rgba(255, 255, 255, 0.923);
+	text-shadow: 1px 4px 2px rgba(13, 12, 11, 0.56);
+}
+.mahatma-gandhi-text span{
+	color:rgba(123, 13, 117, 0.923);
+	text-shadow: 1px 2px 1px rgba(250, 241, 232, 0.393);
+}
+.mahatma-gandhi-more span{
+	color:rgba(26, 225, 15, 0.923);
+	text-shadow: 1px 2px 1px rgba(123, 115, 42, 0.393);
+}
+.mahatma-gandhi-link {
+	color:rgba(41, 3, 3, 0.923);
+	text-shadow: 1px 2px 1px rgba(81, 4, 4, 0.393);
+}
+/* ------------------------------------------------ */
+/*--------------content-info-certificate------------*/
+.content-info-certificate {
+	background-color:rgba(241, 241, 11, 0.891);
+	padding: 30px 20px;
+	text-indent: 25px;
+	line-height: 1.7;
+}
+.content-info-certificate span{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	font-style: italic;
+	font-size: 17px;
+	letter-spacing: 2.6px;
+	color:rgba(225, 15, 15, 0.923);
+	text-shadow: 1px 4px 2px rgba(14, 12, 164, 0.96);
+}
+.content-info-certificate p{
+	color:rgb(61, 12, 183);
+	text-shadow: 1px 4px 2px rgba(47, 2, 15, 0.554);
+}
+/* ------------------------------------------------ */
+/* ------------------------------------------------ */
