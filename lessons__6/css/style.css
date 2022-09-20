@@ -1,0 +1,391 @@
+/* --------- ОБНУЛЕННЯ СТИЛІВ ТЕГІВ ------------ */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: none;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a {
+	color: inherit;
+}
+a:link,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+img{
+	vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+input,
+button,
+textarea {
+	font-family: inherit;
+	font-size: inherit;
+}
+button {
+	cursor: pointer;
+	color: inherit;
+	background-color: inherit;
+}
+/* ------------------------------------------------ */
+/*-------------- Підключення шрифтів--------------- */
+@font-face {
+	font-family: "Lato";
+	src: url("../fonts/lato/Lato-Regular.woff2") format("woff2"), url("../fonts/lato/Lato-Regular.woff") format("woff");
+	font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Lato";
+	src: url("../fonts/lato/Lato-Bold.woff2") format("woff2"), url("../fonts/lato/Lato-Bold.woff") format("woff");
+	font-display: swap;
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Lato";
+	src: url("../fonts/lato/Lato-Black.woff2") format("woff2"), url("../fonts/lato/Lato-Black.woff") format("woff");
+	font-display: swap;
+	font-weight: 900;
+	font-style: normal;
+}
+/* ------------------------------------------------ */
+/*----------------- Загальні стилі----------------- */
+body {
+	line-height: 1;
+	font-family: "Lato", sans-serif;
+	color: #424551;
+}
+.container{
+	max-width: 830px;
+	margin: 0 auto;
+	padding: 5px 10px 0px;
+}
+.wrapper{
+}
+/*--------------------------------------------------*/
+/*--------------------------------------------------*/
+.header,
+.footer {
+	font-size: 18px;
+	font-weight: 700;
+	color:#015087;
+	text-transform: uppercase;
+	background-color:rgba(148, 28, 28, 0.475);
+	text-align: center;
+	padding: 15px;
+}
+.header{
+	margin-bottom: 30px;
+}
+/* ------------------------------------------------ */
+/*------------------content--------------------*/
+.content {
+}
+.content-title {
+	font-weight: 900;
+	font-size: 46px;
+	line-height: 130%;
+	color: #1E212C;
+	margin-bottom: 40px;
+}
+.content-image{
+	margin-bottom: 60px;
+}
+.content-image img{
+	max-width: 100%;
+}
+.content-description{
+	margin-bottom: 24px;
+}
+.content-description p{
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 150%;
+	color: #1E212C;
+	max-width: 800px;
+}
+.content-text {
+	line-height: 160%;
+	margin-bottom: 48px;
+}
+.content-text p:not(:last-child){
+	margin-bottom: 42px;
+}
+.content-quote {
+	padding-left: 58px;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 150%;
+	color: #1E212C;
+	margin-bottom: 48px;
+}
+.content-list{
+	margin-bottom: 24px;
+}
+.content-list .content-list-text{
+	line-height: 160%;
+	margin-bottom: 24px;
+}
+.content-list-item {
+	padding-left: 32px;
+	line-height: 160%;
+}
+.content-list-item:not(:last-child){
+	margin-bottom: 4px;
+}
+.content-info {
+	line-height: 160%;
+	margin-bottom: 30px;
+}
+/* ------------------------------------------------ */
+/* ------------------------------------------------ */
+.box {
+	width: 100%;
+	height: 50px;
+	background-color: #420fc3;
+	margin-bottom: 30px;
+	border-radius: 10px;
+	box-shadow: 2px 4px 5px rgba(2, 2, 2, 0.927);
+}
+/* ---------------------article-question ------------------- */
+/* --------------------------------------------------------- */
+
+.article {
+	max-width: 830px;
+	margin: 0 auto;
+	padding: 0px 10px 0px;
+}
+.article-image {
+	margin-bottom: 20px;
+	outline: 10px solid #020202;
+}
+.article-image img{
+	max-width: 100%;
+}
+.article-title {
+	font-size: 25px;
+	font-weight: 700;
+	text-align: center;
+	margin-bottom: 30px;
+	background-color:#ffeaea;
+	color:#cbbcbc;
+	padding: 40px;
+	text-shadow: 1px 2px 1px rgba(56, 36, 62, 0.921);
+	border: 2px solid #015087;
+	border-radius: 0px 20px 0px 20px;
+}
+.article-sub-title {
+	font-size: 17px;
+	font-weight: 900;
+	line-height: 150%;
+	text-align: justify;
+	background-color: rgb(254, 254, 254);
+	padding: 20px;
+	box-shadow: 1px 2px 3px rgb(2, 2, 2);
+	margin-bottom: 50px;
+	opacity: 0.6;
+}
+.article-question {
+	margin: 45px 0px 30px 0px;
+}
+.article-question .howtosucceed{
+	margin-bottom: 20px;
+}
+.howtosucceed,
+.whatmistakes {
+	max-width: 350px;
+	padding: 20px;
+}
+.whatmistakes-wrapper,
+.whatmistakes-wrapper {
+	max-height: 195px;
+	overflow: auto;
+	scrollbar-width: none;
+	-ms-overflow-style: none;
+}
+.howtosucceed{
+	background-color: rgb(88, 17, 96);
+	box-shadow: 5px 5px 1px rgb(225, 17, 17);
+	border-radius: 20px 0px 20px 0px;
+	margin: 0 0 auto;
+}
+.howtosucceed-wrapper::-webkit-scrollbar {
+	width: 0;
+	height: 0;
+}
+.question-title {
+	text-align: center;
+	font-size: 17px;
+	font-weight: 700;
+	color:#fffbfb;
+	margin-bottom: 10px;
+	padding-bottom: 5px;
+}
+.question-text {
+	line-height: 120%;
+	text-align: justify;
+	padding: 5px;
+	color:#fffbfb;
+}
+.howtosucceed-title {
+	border-bottom: 3px solid #cc0de1;
+}
+.whatmistakes{
+	background-color: rgb(27, 134, 211);
+	box-shadow: 5px 5px 1px rgb(238, 226, 4);
+	border-radius: 0px 20px 0px 20px;
+	margin: 0 0 0 auto;
+}
+.whatmistakes-wrapper::-webkit-scrollbar {
+	width: 0;
+	height: 0;
+}
+.whatmistakes-title {
+	border-bottom: 3px solid #690de1;
+}
+/* ---------------------article-rules-item info-one------------------- */
+/* ------------------------------------------------------------------- */
+.article-rules{
+	background-color:rgba(17, 231, 120, 0.474);
+	box-shadow: 5px 5px 1px rgb(2, 2, 2);
+	padding: 25px;
+	color:#ffffff;
+	margin-bottom: 50px;
+	border-radius:0px 30px 0px 30px
+}
+.article-rules-title {
+	font-size: 20px;
+	text-align: center;
+	font-weight: 700;
+	color:#13d113;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+}
+.article-rules-item {
+	padding: 20px;
+	margin-bottom: 25px;
+	border-radius: 20px 0px;
+}
+.item-rules-text{
+	line-height: 150%;
+	text-align: justify;
+	text-indent: 20px;
+}
+.info-one {
+	background-color: rgb(83, 186, 223);
+	box-shadow: 5px 5px 1px rgb(66, 172, 31);
+}
+.item-rules-title {
+	font-weight: 700;
+	font-size: 17px;
+	color:#020202;
+	text-align: center;
+	margin-bottom: 25px;
+}
+/* ---------------------article-rules-item info-two------------------- */
+/* ------------------------------------------------------------------- */
+.info-two {
+	background-color: rgb(193, 37, 190);
+	box-shadow: 5px 5px 1px rgb(57, 16, 169);
+}
+.info-two p{
+	margin-bottom: 25px;
+}
+.info-two-image img{
+	max-width: 100%;
+}
+/* --------------------article-rules-item info-three------------------ */
+/* ------------------------------------------------------------------- */
+.info-three {
+	background-color: rgb(23, 76, 210);
+	box-shadow: 5px 5px 1px rgb(119, 12, 87);
+}
+.info-three-image{
+	margin-bottom: 15px;
+}
+.info-three-image img{
+	max-width: 100%;
+}
+.info-three-additionally{
+	margin-top: 10px;
+}
+.info-three-additionally span{
+	color:#000000;
+	display: block;
+	margin-bottom: 5px;
+}
+.info-three-additionally .info-three-link {
+	color:rgb(0, 239, 12);
+	text-decoration: underline;
+}
+/* --------------------article-rules-item info-four------------------- */
+/* ------------------------------------------------------------------- */
+.info-four {
+	background-color: rgb(21, 229, 170);
+	box-shadow: 5px 5px 1px rgb(184, 9, 9);
+}
+/* --------------------article-rules-item info-five------------------- */
+/* ------------------------------------------------------------------- */
+.info-five {
+	background-color: rgb(210, 23, 110);
+	box-shadow: 5px 5px 1px rgb(0, 0, 0);
+}
+/* --------------------article-rules-item info-four------------------- */
+/* ------------------------------------------------------------------- */
+.info-six {
+	background-color: rgb(88, 17, 96);
+	box-shadow: 5px 5px 1px rgb(225, 17, 17);
+}
+/* --------------------article-rules-item info-four------------------- */
+/* ------------------------------------------------------------------- */
+.info-seven {
+	background-color: rgb(27, 134, 211);
+	box-shadow: 5px 5px 1px rgb(238, 226, 4);
+}
+.info-seven-title {
+}
+/* --------------------article-rules-item info-eight------------------- */
+/* ---------------------------------------------------------------------*/
+.info-eight {
+	background-color: rgba(88, 3, 206, 0.836);
+	box-shadow: 5px 5px 1px rgb(43, 28, 28);
+}
+.item-rules-text p{
+	margin-bottom: 15px;
+}
+/* ---------------------------------------------------------------------*/
+/* ----------------------------navigation-------------------------------*/
+.navigation-btn {
+	text-align: center;
+	margin-bottom: 25px;
+}
+.navigation-link {
+	text-align: center;
+	background-color: rgb(231, 69, 69);
+	box-shadow: 2px 5px 1px rgb(2, 2, 2);
+	min-height: 52px;
+	border-radius: 15px;
+	padding: 20px 30px;
+	color:#13d113;
+	display: inline-block;
+}
+/* ---------------------------------------------------------------------*/
+/* ---------------------------------------------------------------------*/
