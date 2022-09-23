@@ -1,0 +1,401 @@
+/* --------- ОБНУЛЕННЯ СТИЛІВ ТЕГІВ ------------ */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: none;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a {
+	color: inherit;
+}
+a:link,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+img{
+	vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+input,
+button,
+textarea {
+	font-family: inherit;
+	font-size: inherit;
+}
+button {
+	cursor: pointer;
+	color: inherit;
+	background-color: inherit;
+}
+/* ------------------------------------------------ */
+/*-------------- Підключення шрифтів--------------- */
+@font-face {
+	font-family: "Lato";
+	src: url("../fonts/lato/Lato-Regular.woff2") format("woff2"), url("../fonts/lato/Lato-Regular.woff") format("woff");
+	font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Lato";
+	src: url("../fonts/lato/Lato-Bold.woff2") format("woff2"), url("../fonts/lato/Lato-Bold.woff") format("woff");
+	font-display: swap;
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Lato";
+	src: url("../fonts/lato/Lato-Black.woff2") format("woff2"), url("../fonts/lato/Lato-Black.woff") format("woff");
+	font-display: swap;
+	font-weight: 900;
+	font-style: normal;
+}
+/* ------------------------------------------------ */
+/*----------------- Загальні стилі----------------- */
+body {
+	line-height: 1;
+	font-family: "Lato", sans-serif;
+	color: #424551;
+}
+[class*="__container"]{
+	max-width: 830px;
+	margin: 0 auto;
+	padding: 5px 10px 0px;
+}
+.wrapper{
+}
+/*--------------------------------------------------*/
+/*--------------------------------------------------*/
+.header,
+.footer {
+	font-size: 18px;
+	font-weight: 700;
+	color:#ffffff;
+	text-transform: uppercase;
+	background: rgb(9,193,231);
+	background-image: radial-gradient(circle, rgba(9,193,231,1) 45%, rgba(180,34,169,1) 47%, rgba(63,94,251,1) 85%, rgba(252,70,107,1) 100%);	text-align: center;
+	padding: 15px;
+}
+.header{
+	margin-bottom: 30px;
+}
+/* ------------------------------------------------ */
+/*------------------content--------------------*/
+.content {
+}
+.content-title {
+	font-weight: 900;
+	font-size: 46px;
+	line-height: 130%;
+	color: #1E212C;
+	margin-bottom: 40px;
+}
+.content-image{
+	margin-bottom: 60px;
+}
+.content-image img{
+	max-width: 100%;
+}
+.content-description{
+	margin-bottom: 24px;
+}
+.content-description p{
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 150%;
+	color: #1E212C;
+	max-width: 800px;
+}
+.content-text {
+	line-height: 160%;
+	margin-bottom: 48px;
+}
+.content-text p:not(:last-child){
+	margin-bottom: 42px;
+}
+.content-quote {
+	padding-left: 58px;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 150%;
+	color: #1E212C;
+	margin-bottom: 48px;
+	background: url("../img/braces.svg") 0 0 no-repeat;
+}
+
+.content-list{
+	margin-bottom: 24px;
+}
+.content-list .content-list-text{
+	line-height: 160%;
+	margin-bottom: 24px;
+}
+.content-list-item {
+	padding-left: 32px;
+	line-height: 160%;
+	background: url("../img/check.svg") left 5px no-repeat;
+}
+.content-list-item:not(:last-child){
+	margin-bottom: 4px;
+}
+.content-info {
+	line-height: 160%;
+	margin-bottom: 30px;
+}
+/* ------------------------------------------------ */
+/* ------------------------------------------------ */
+.box {
+	width: 100%;
+	height: 50px;
+	margin-bottom: 30px;
+	border-radius: 10px;
+	background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(21,16,204,0.6674019949776786) 6%, rgba(19,208,171,1) 24%, rgba(209,16,195,1) 47%, rgba(70,132,110,1) 76%, rgba(37,0,251,1) 100%, rgba(0,212,255,1) 100%);}
+/* ------------------------------------------------ */
+/* ------------------MENU-NAVIGATION--------------- */
+	.navigation-wrapper {
+	}
+	.navigation__container {
+	}
+	.navigation-menu {
+		margin-bottom: 40px;
+		box-shadow: 6px 8px 1px rgba(0, 0, 0, 0.812);
+		padding: 20px;
+		border-radius: 40px 0px 30px 0px;
+		background-image: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(27,0,181,1) 0%, rgba(200,213,36,1) 49%, rgba(69,79,252,1) 100%);
+	}
+	.navigation-menu-title {
+		text-align: center;
+		font-size: 20px;
+		text-transform: uppercase;
+		letter-spacing: 0.2em;
+		margin-bottom: 15px;
+	}
+	.navigation-menu-list {
+	}
+	.navigation-menu-item {
+		background: url("../img/check.svg") left top no-repeat;
+		padding-left: 25px;
+	}
+	.navigation-menu-item:not(:last-child){
+		margin-bottom: 10px;
+	} 
+	.navigation-menu-link {
+		color:rgb(255, 255, 255);
+		text-shadow: 2px 4px 2px #000;
+		text-transform: uppercase;
+		text-decoration: underline;
+		letter-spacing: 0.19em;
+	}	
+/* ---------------------background------------------ */
+/* ------------------МОДИФІКАТОРИ------------------- */
+.repeat {
+	background-color: rgba(76, 138, 146, 0.612);
+}
+.repeat-x {
+	background-color: rgba(13, 86, 169, 0.612);
+}
+.repeat-y {
+	background-color: rgba(74, 14, 134, 0.612);
+}
+.position {
+	background-color: rgba(22, 95, 25, 0.612);
+}
+.position-center {
+	background-color: rgba(174, 37, 74, 0.612);
+}
+.position-left {
+	background-color: rgba(75, 60, 6, 0.612);
+}
+.position-right-bottom{
+	background-color: rgba(14, 193, 127, 0.612);
+}
+.attachment {
+	background-color: rgba(60, 4, 144, 0.77);
+}
+.attachment-fixed {
+	background-color: rgba(9, 237, 180, 0.77);
+}
+.attachment-local {
+	background-color: rgb(1, 128, 246);
+}
+.background-size {
+	background-color: rgba(246, 58, 1, 0.743);
+}
+.background-size-cover {
+	background-color: rgba(109, 28, 59, 0.971);
+}
+.background-size-contain {
+	background-color: rgba(123, 197, 34, 0.971);
+}
+.background-size-dimensions{
+	background-color: rgba(40, 4, 57, 0.401);
+}
+/* --------------------Загальні стилі--------------------- */
+.background-item {
+	margin-bottom: 40px;
+	box-shadow: 5px 6px 1px rgb(30, 33, 44);
+}
+.background-title {
+	padding: 25px;
+	color:#030202;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: 700;
+}
+/* ------------------------------------------------- */
+.background__repeat {
+	min-height: 500px;
+	background:url("../img/ocean.jpg") repeat;
+	border-top: 3px solid #114580;
+}
+.background__repeat-x {
+	min-height: 300px;
+	background:url("../img/illustration.jpg") repeat-x;
+	border-top: 3px solid #114580;
+}
+.background__repeat-y {
+	min-height: 600px;
+	background:url("../img/illustration.jpg") repeat-y;
+	border-top: 3px solid #114580;
+}
+/* ------------------------------------------------- */
+.background__position {
+	min-height: 300px;
+	background: url("../img/background.jpg") 40px 120px no-repeat;
+	border-top: 3px solid #114580;
+}
+.background__position-center {
+	min-height: 300px;
+	background:url("../img/background.jpg") center no-repeat;
+	border-top: 3px solid #114580;
+}
+.background__position-left {
+	min-height: 300px;
+	background:url("../img/background.jpg") left no-repeat;
+	border-top: 3px solid #114580;
+}
+.background__position-right-bottom {
+	min-height: 300px;
+	background:url("../img/background.jpg") 100% 100% no-repeat;
+	border-top: 3px solid #114580;
+}
+/* ------------------------------------------------- */
+.background__attachment {
+	min-height: 300px;
+	background:url("../img/zum.jpg") 0 0 no-repeat scroll;
+	border-top: 3px solid #114580;
+	color:#f5f1f1;
+	padding: 20px;
+}
+.background__attachment-fixed {
+	min-height: 300px;
+	background:url("../img/zum.jpg") 0 0 no-repeat fixed;
+	border-top: 3px solid #114580;
+	color:#ffffff;
+	text-shadow: 2px 4px 3px rgb(7, 7, 7);
+	text-align: justify;
+	padding: 20px;
+}
+.background__attachment-local {
+	max-height: 300px;
+	background:url("../img/zum.jpg") 0 0 no-repeat local;
+	border-top: 3px solid #114580;
+	color:#ffffff;
+	text-shadow: 2px 4px 3px rgb(7, 7, 7);
+	text-align: justify;
+	padding: 20px;
+	overflow: auto;
+}
+/* ------------------------------------------------- */
+.background__size {
+	min-height: 200px;
+	background:url("../img/target.jpg") 0 0 / 100% auto no-repeat;
+	border-top: 3px solid #114580;
+}
+.background__size-cover {
+	min-height: 300px;
+	background:url("../img/target.jpg") 0 0 / cover no-repeat;
+	border-top: 3px solid #114580;
+}
+.background__size-contain {
+	min-height: 300px;
+	background:url("../img/target.jpg") 0 0 / contain no-repeat;
+	border-top: 3px solid #114580;
+}
+.background__size-dimensions {
+	min-height: 300px;
+	background:url("../img/target.jpg") center / 420px 200px no-repeat;
+	border-top: 3px solid #114580;
+}
+/* ---------------------------------------------------------------------*/
+/* ---------------------------BODY-BACKGROUND---------------------------*/
+.background-body {
+	margin-bottom: 40px;
+}
+.item-one {
+	background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(49,29,2,1) 5%, rgba(13,53,98,1) 30%, rgba(79,21,143,1) 40%, rgba(88,48,143,1) 60%, rgba(13,53,98,1) 70%, rgba(49,29,2,1) 95%, rgba(2,0,36,1) 100%);
+	border-bottom: 2px solid #fff;
+}
+.body-background-title {
+	color:#ffffff;
+	text-shadow: 2px 4px 2px #000;
+	padding: 40px;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+.body-background-one {
+	min-height: 300px;
+	background: url("../img/girl.jpg") no-repeat;
+	border-top: 3px solid #2c0303;
+}
+.item-two {
+	background-image: linear-gradient(166deg, rgba(2,0,36,1) 0%, rgba(49,29,2,1) 0%, rgba(79,21,143,1) 20%, rgba(13,53,98,1) 30%, rgba(88,48,143,1) 60%, rgba(66,50,130,1) 63%, rgba(13,53,98,1) 70%, rgba(49,29,2,1) 92%, rgba(2,0,36,1) 100%);
+	border-bottom: 2px solid #fff;
+}
+.body-background-two {
+	min-height: 800px;
+	background: url("../img/girl.jpg") no-repeat left / 400px, url("../img/fon-priroda.jpg") no-repeat 0 0 / cover;
+	border-top: 3px solid #2c0303;
+}
+.item-three {
+	background-image: linear-gradient(192deg, rgba(2,0,36,1) 0%, rgba(49,29,2,1) 0%, rgba(2,16,49,1) 29%, rgba(185,4,48,1) 63%, rgba(2,0,36,1) 100%)
+}
+.body-background-three {
+	min-height: 600px;
+	background: url("../img/girl.jpg") no-repeat left top / 400px, url("../img/boat.jpg") no-repeat right bottom / 25% 70%, url("../img/fon-priroda.jpg") no-repeat center / 800px;
+	border-top: 3px solid #2c0303;
+}
+/* ---------------------------------------------------------------------*/
+/* ---------------------------NAVIGATION---------------------------*/
+.navigation {
+	margin-bottom: 40px;
+}
+.navigation-btn {
+	text-align: center;
+}
+.navigation-link {
+	color:#f5f1f1;
+	background-image: linear-gradient(197deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 0%, rgba(252,176,69,1) 100%);	
+	padding: 15px 40px;
+	border-radius: 15px;
+	letter-spacing: 0.2em;
+	box-shadow: 4px 6px 2px rgb(0, 0, 0);
+	
+}
