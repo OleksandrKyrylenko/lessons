@@ -1,0 +1,225 @@
+/* --------- ОБНУЛЕННЯ СТИЛІВ ТЕГІВ ------------ */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: none;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a {
+	color: inherit;
+}
+a:link,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+img{
+	vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+input,
+button,
+textarea {
+	font-family: inherit;
+	font-size: inherit;
+}
+button {
+	cursor: pointer;
+	color: inherit;
+	background-color: inherit;
+}
+html,
+body{
+	height: 100%;
+}
+/* ------------------------------------------------ */
+/* ------------------------------------------------ */
+.wrapper{
+	min-height: 100%;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+
+.sun {
+	position: absolute;
+	z-index: 10;
+	display:block;
+	background-image:url('../img/sun.svg');
+	right: 30%;
+	top: 10px;
+	background-repeat: no-repeat;
+	background-size:cover;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	animation-name: sun;
+	animation-duration: 5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: normal;
+	animation-play-state: running;
+	animation-delay: 0s;
+}
+@keyframes sun{
+	100%{
+		transform: rotate(360deg);
+	}
+}
+.city{
+	position: absolute;
+	z-index: 6;
+	background-image:url('../img/city.jpg');
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height:100%;
+	width: 500%;
+	display: block;
+	background-repeat: repeat-x;
+	animation: city 20s linear infinite;
+}
+@keyframes city{
+	100%{
+		transform: translateX(-1000px);
+	}
+}
+.grass {
+	position: absolute;
+	z-index: 3;
+	background-image:url('../img/san-agustin.webp');
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height:283px;
+	width: 500%;
+	display: block;
+	background-repeat: repeat-x;
+	animation: city 20s linear infinite;
+}
+.tree {
+	position: absolute;
+	background-color: rgb(1, 0, 0);
+	width: 10px;
+	height: 20%;
+	bottom: 20%;
+	border-radius: 20%;
+	left: 10%;
+	z-index: 7;
+	animation: tree 20s linear infinite;
+}
+.tree-2{
+	left: 50%;
+}
+.tree-3{
+	left: 90%;
+}
+.tree-4{
+	left: 120%;
+}
+
+@keyframes tree{
+	100%{
+		transform:translateX(-1000px);
+	}
+}
+.tree::after{
+	content:'';
+	position: absolute;
+	display: block;
+	width: 50px;
+	height: 160px;
+	bottom: 30%;
+	right: -20px;
+	border-radius:50%;
+	background-color: rgb(84, 244, 5);
+	animation-name: circle;
+	animation-duration: 5s;
+	transform-origin: bottom center;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+@keyframes circle{
+	0%{
+		transform:rotate(-4deg);
+	}
+	100%{
+		transform:rotate(4deg);
+	}
+}
+.tree::before{
+	content:'';
+	position: absolute;
+	display: block;
+	width: 150px;
+	height: 20px;
+	bottom: -19px;
+	left: -70px;
+	border-radius:50%;
+	background-color: rgba(124, 244, 5, 0.514);
+}
+.tree-2::after{
+	content:'';
+	background-color: rgb(12, 102, 34);
+}
+.tree-3::after{
+	content:'';
+	background-color: rgb(48, 180, 81);
+}
+.tree-4::after{
+	content:'';
+	background-color: rgb(166, 255, 50);
+}
+.avto {
+	z-index: 6;
+	position: absolute;
+	top: 410px;
+	left: 20%;
+	width: 180px;
+	height: 100px;
+	transform: rotateY(180deg);
+}
+.avto img{
+	max-width: 100%;
+}
+.wheels {
+	position: absolute;
+	z-index: 6;
+	left: 20%;
+	top: 434px;
+	transform: translateX(-50%);
+}
+.wheels img{
+	width: 32px;
+	height: 32px;
+	animation: wheels 1s linear infinite;
+}
+@keyframes wheels{
+	100%{
+		transform: rotate(360deg);
+	}
+}
+.front-wheel {
+	left: 10px;
+	position: absolute;
+}
+.back-wheel {
+	left: 125px;
+	position: absolute;
+}
