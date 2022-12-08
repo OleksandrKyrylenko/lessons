@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Lessons 23. JS</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header"></header>
+        <main class="page">
+            <section class="page__task-1 task-1">
+                <div class="page__container">
+                    <h2 class="title">Завдання №1. Оператори JAVASCRIPT. "2"+2=22.</h2>
+                    <div class="image">
+                        <img src="img/task-1.jpg" alt="Завдання №1">
+                    </div>
+                    <div class="task-1__answers answers">
+                        <ul class="answers__list">
+                            <li class="answers__item">
+                                Не вірно. Оператор додавання не змінює тип даних на number. В результаті ми отримаємо рядок 35 - 22.
+                            </li>
+                            <li class="answers__item">
+                                Вірно. Оператор множення змінює тип даних на number. В результаті ми отримаємо число 770.
+                            </li>
+                            <li class="answers__item">
+                                Не вірно. Інкремент можливо застосовувати лише до змінних. Такий вираз приведе до помилки.
+                            </li>
+                            <li class="answers__item">
+                                Не вірно. Результатом буде 0. В даному випадку використано суфіксну форму, 
+                                в результаті, змінна newUsers отримає перше значення (0) змінної usersCounter ще до виконання операції.
+                            </li>
+                            <li class="answers__item">
+                                Не вірно. В першому виразі
+                                оператор !(НІ) переведе булеве значення false в true, а число 11 це також true.
+                                В другому виразі число 18 це true, а оператор !(НІ) переведе значення false пустого рядка
+                                в значення true.
+                                Після цього буде використано оператор ||(АБО), тому що приорітет оператора &&(ТА) 
+                                вищий за приорітет оператора ||(АБО).
+                                Так як в першому виразі двоє операндів true,
+                                тому буде повернуто 11.
+                            </li>
+                            <li class="answers__item">
+                                Змінна name задана. Результатом буде значення 0, тому що оператор ?? поверне перший операнд змінної name, а саме 0, так як він не null і не undefined.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="page__task-2 task-2">
+                <div class="page__container">
+                    <h2 class="title">Завдання №2. IF ELSE в JAVASCRIPT. Умовний оператор "?".</h2>
+                    <div class="image">
+                        <img src="img/task-2.jpg" alt="Завдання №2">
+                    </div>
+                    <div class="task-2__answers answers">
+                        <ul class="answers__list">
+                            <li class="answers__item">
+                                Брехня. При строгому рівнянні відбувається перевірка рівності без зміни типів в числа.
+                            </li>
+                            <li class="answers__item">
+                                Істина. Оператор рівності перетворює два операнда в число.
+                            </li>
+                            <li class="answers__item">
+                                Істина.                           
+                            </li>
+                            <li class="answers__item">
+                                Істина. Код виконується
+                                тільки якщо умова if повертає true. 
+                                if(0) - це false, код не виконується. Якщо ж умова true (не пустий рядок це true) результатом 
+                                буде Істина.                
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="page__task-3 task-3">
+                <div class="page__container">
+                    <h2 class="title">Завдання №3. Цикли FOR и WHILE в JavaScript. Директиви break і continue.</h2>
+                    <div class="image">
+                        <img src="img/task-3.jpg" alt="Завдання №3">
+                    </div>
+                    <div class="task-1__answers answers">
+                        <ul class="answers__list">
+                            <li class="answers__item">
+                                <p>Вивести в консоль числа від 1 до 5</p>
+                                <div class="image">
+                                    <img src="img/task-3_1.jpg" alt="Task-3_1">
+                                </div>
+                            </li>
+                            <li class="answers__item">
+                                Не вірно. Булеве значення числа 0 - false, тому останній 
+                                результат буде 1.
+                            </li>
+                            <li class="answers__item">
+                                <p>Переписати на while</p>
+                                <div class="image">
+                                    <img src="img/task-3_2.jpg" alt="Task-3_1">
+                                </div>
+                            </li>
+                            <li class="answers__item">
+                                <p>Припинити роботу цикла №1 коли size рівна 1</p>
+                                <div class="image">
+                                    <img src="img/task-3_3.jpg" alt="Task-3_1">
+                                </div>                            
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="page__task-4 task-4">
+                <div class="page__container">
+                    <h2 class="title">Завдання №4. Числа в JAVASCRIPT. Тип даних number. Робота з числами. Проблема неточних вирахувань.</h2>
+                    <div class="image">
+                        <img src="img/task-4.jpg" alt="Завдання №4">
+                    </div>
+                    <div class="task-1__answers answers">
+                        <ul class="answers__list">
+                            <li class="answers__item">
+                                <p>Отримати правильне значення округлення</p>
+                                <div class="image">
+                                    <img src="img/task-4_1.jpg" alt="Task-4_1">
+                                </div>
+                            </li>
+                            <li class="answers__item">
+                                <p>Отримати число 135.58 з рядка</p>
+                                <div class="image">
+                                    <img src="img/task-4_2.jpg" alt="Task-4_2">
+                                </div>
+                            </li>
+                            <li class="answers__item">
+                                <p>Побудувати правильну умову вітвлення</p>
+                                <div class="image">
+                                    <img src="img/task-4_3.jpg" alt="Task-4_3">
+                                </div>
+                            </li>
+                            <li class="answers__item">
+                                <p>Знайти максимальне число з 10,58,39,-150,0</p>
+                                <div class="image">
+                                    <img src="img/task-4_4.jpg" alt="Task-4_4">
+                                </div>                            
+                            </li>
+                            <li class="answers__item">
+                                <p>Округлити число 58.858 до числа 58</p>
+                                <div class="image">
+                                    <img src="img/task-4_5.jpg" alt="Task-4_5">
+                                </div>                            
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="page__task-5 task-5">
+                <div class="page__container">
+                    <h2 class="title">Завдання №5. Рядки в JAVASCRIPT. Тип даних string.</h2>
+                    <div class="image">
+                        <img src="img/task-5.jpg" alt="Завдання №5">
+                    </div>
+                    <div class="task-1__answers answers">
+                        <ul class="answers__list">
+                            <li class="answers__item">
+                                Не вірно. Для подібного виразу потрібно 
+                                використовувати зворотні лапки.
+                            </li>
+                            <li class="answers__item">
+                                <p>Отримати символ "н" рядка</p>
+                                <div class="image">
+                                    <img src="img/task-5_1.jpg" alt="Task-5_1">
+                                </div>
+                            </li>
+                            <li class="answers__item">
+                                Не вірно. Результатом буде рядок 123456. 
+                                Оператор + не змінює тип даних.
+                            </li>
+                            <li class="answers__item">
+                                <p>Отримати рядок в верхньому регістрі.</p>
+                                <div class="image">
+                                    <img src="img/task-5_2.jpg" alt="Task-5_2">
+                                </div>                            
+                            </li>
+                            <li class="answers__item">
+                                False. Тому що підрядок "лан" розпочинається 
+                                з 3 комірки. Правильний запис:
+                                console.log(text.includes('лан',3));                           
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer"></footer>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
