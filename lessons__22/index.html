@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Lessons 22. JS</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header"></header>
+        <main class="page">
+            <section class="page__task-1 task-1">
+                <div class="page__container">
+                    <h2 class="title">Завдання №1. Структура кода. Інструкції. Режим use strict.</h2>
+                    <div class="image">
+                        <img src="img/task-1.jpg" alt="Завдання №1">
+                    </div>
+                    <div class="task-1__answers answers">
+                        <ul class="answers__list">
+                            <li class="answers__item">
+                                Помилки не буде. 
+                            </li>
+                            <li class="answers__item">
+                                Помилки не буде. Кожна з інструкцій написана з нового рядка. 
+                                Крапку з комою ми можемо не писати, але може виникнути помилка під час стискання файлу JS певним збирачем.  
+                            </li>
+                            <li class="answers__item">
+                                Буде помилка. В даному випадку інструкції потрібно розділити комою, або крапкою з комою.
+                                Така помилка може виникнути на прикладі який описаний в другому варіанті.
+                                Тому, краще писати з нового рядка закриваючи все.
+                            </li>
+                            <li class="answers__item">
+                                Все що відкрито, повинно бути закрито. Помилка в першій інструкції - пропущено закриваючу одинарну лапку.   
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="page__task-2 task-2">
+                <div class="page__container">
+                    <h2 class="title">Завдання №2. Змінні в JAVASCRIPT. Константи. Загальні слова LET CONST VAR.</h2>
+                    <div class="image">
+                        <img src="img/task-2.jpg" alt="Завдання №2">
+                    </div>
+                    <div class="task-2__answers answers">
+                        <ul class="answers__list">
+                            <li class="answers__item">
+                                Не вірно. Змінні потрібно розділити крапкою з комою, або другу змінну перенести на новий рядок.
+                            </li>
+                            <li class="answers__item">
+                                Помилки не буде, але краще застосувати стиль lowerCamelCase : let myAge = 36;
+                            </li>
+                            <li class="answers__item">
+                                Помилки не буде, але ті імена констант значення яких присвоюється в ході виконання програми можна записати як і імена змінних.
+                            </li>
+                            <li class="answers__item">
+                                Вірно. Імена тих констант які відомі завчасно, прийнято записувати верхнім регістром розділяючи слова нижнім підкреслення.   
+                            </li>
+                            <li class="answers__item">
+                                Вірно. Відмінність var від let та const. 
+                                З блоком умови (if) ми можемо об'явити зміну var і вона буде показана за межами блоку і помилки не викличе.   
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="page__task-3 task-3">
+                <div class="page__container">
+                    <h2 class="title">Завдання №3. Типи данних JAVASCRIPT. Null String Undefined Boolean Number та інші.</h2>
+                    <div class="image">
+                        <img src="img/task-3.jpg" alt="Завдання №3">
+                    </div>
+                    <div class="task-1__answers answers">
+                        <ul class="answers__list">
+                            <li class="answers__item">
+                                Помилки не буде, але якщо нам потрібно в рядку вивести змінну, тоді необхідно використовувати зворотні лапки. 
+                            </li>
+                            <li class="answers__item">
+                                Не вірно. Значення NaN застосовується якщо є обчислювальна помилка.
+                                В даному випадку на нуль ділити ми можемо. Результатом ділення буде
+                                числове значення Infinity.
+                            </li>
+                            <li class="answers__item">
+                                Не вірно. Змінна є невизначеною, тому тип даних в неї undefined.
+                                Тип даних Null визначається змінною, але її значення буде дорівнювати "порожнечі".
+                            </li>
+                            <li class="answers__item">
+                                Вірно. Це автоматичне перетворення яке можливе без спеціальної функції.                            
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer"></footer>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
